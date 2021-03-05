@@ -8,85 +8,82 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <meta name="referrer" content="never">
-  <meta name="referrer" content="no-referrer">
-  <link href="http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg" rel="shortcut icon">
-  <style>
-    html,
-    body {
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-
-    body {
-      position: relative;
-      font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
-    }
-
-    #load {
-      width: 100vw;
-      height: 100vh;
-      display: none;
-      overflow: hidden;
-      background-color: #dd001b;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      font-size: 10px;
-      z-index: 999;
-    }
-
-    .index-title {
-      position: absolute;
-      top: 2.3em;
-      width: 100%;
-      color: #fff;
-      font-size: 4.6em;
-      line-height: 1.5;
-      text-align: center;
-      opacity: 0;
-      animation: titleIn 1s both;
-    }
-
-    .index-icon {
-      position: absolute;
-      bottom: 3em;
-      font-size: 2em;
-      line-height: 1.5;
-      width: 100%;
-      color: #fff;
-      text-align: center;
-      float: right;
-      opacity: 0;
-      animation: iconIn 3s 2s both;
-    }
-
-    @keyframes titleIn {
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes iconIn {
-      100% {
-        opacity: 1;
-      }
-    }
-
-  </style>
-  <title>music-player</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="no-referrer">
+    <link href="http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg" rel="shortcut icon">
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        body {
+            position: relative;
+            font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
+        }
+        
+        #load {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            overflow: hidden;
+            background-color: #dd001b;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 10px;
+            z-index: 999;
+        }
+        
+        .index-title {
+            position: absolute;
+            top: 2.3em;
+            width: 100%;
+            color: #fff;
+            font-size: 4.6em;
+            line-height: 1.5;
+            text-align: center;
+            opacity: 0;
+            animation: titleIn 1s both;
+        }
+        
+        .index-icon {
+            position: absolute;
+            bottom: 3em;
+            font-size: 2em;
+            line-height: 1.5;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            float: right;
+            opacity: 0;
+            animation: iconIn 3s 2s both;
+        }
+        
+        @keyframes titleIn {
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes iconIn {
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>music-player</title>
 </head>
 
 <body>
-  <div id="load">
-    <p class="index-title">音樂的力量</p>
-    <p class="index-icon"><svg t="1567819718363" class="icon" style="transform: translateY(40%)" viewBox="0 0 1024 1024"
-        version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1950" width="50" height="50">
+    <div id="load">
+        <p class="index-title">音樂的力量</p>
+        <p class="index-icon"><svg t="1567819718363" class="icon" style="transform: translateY(40%)" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1950" width="50" height="50">
         <path
           d="M268.2 89.2h498.9c92 0 166.3 74.3 166.3 166.3v498.9c0 92-74.3 166.3-166.3 166.3H268.2c-92 0-166.3-74.3-166.3-166.3V255.5c0-92 74.3-166.3 166.3-166.3z m0 0"
           fill="#D92916" p-id="1951"></path>
@@ -97,8 +94,8 @@
           d="M497.4 448.4c-10.2 10.8-17.3 24.1-20.4 38.7-2.6 13.2-2.6 26.8 0 40 2.6 14.9 10.8 28.2 22.8 37.3 10.1 6.9 22.6 9.3 34.5 6.6 21.8-4.2 37.8-22.7 39-44.9-0.7-5.4-1.7-10.7-3.1-15.9l-23.8-90.1c-18.5 5-35.4 14.7-49 28.3z m0 0"
           fill="#D92916" p-id="1953"></path>
       </svg>网易云音乐</p>
-  </div>
-  <div id="app""></div>
+    </div>
+    <div id="app" "></div>
     <!-- built files will be auto injected -->
     <script>
       const load = document.getElementById('load')
